@@ -7,7 +7,7 @@ import requests
 import json
 # Assuming the test file is named 'test.csv' and is in your Google Drive in the same directory as the training data.
 # You'll need to adjust the path if it's elsewhere.
-TEST_FILE_PATH = r"C:\Users\gohzh\OneDrive\Documents\School Stuff\04 AAP AI Applications Project\flask-prediction-service\test.csv"
+TEST_FILE_PATH = r"test.csv"
 
 # Assuming you want to predict for the first row of the test file.
 try:
