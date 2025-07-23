@@ -1,16 +1,6 @@
 # Use a lightweight Python image
 FROM python:3.9-slim
 
-# Install system dependencies required by LightGBM
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    libboost-all-dev \
-    libcurl4-openssl-dev \
-    libssl-dev \
-    libgmp-dev \
-    libhdf5-dev \
-    cmake
-
 # Set the working directory in the container
 WORKDIR /app
 
@@ -25,4 +15,4 @@ COPY . /app
 EXPOSE 5000
 
 # Command to run the Flask application using gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+CMD ["python", "flask_app.py"]
