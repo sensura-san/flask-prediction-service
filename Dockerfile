@@ -15,4 +15,4 @@ COPY . /app
 EXPOSE 5000
 
 # Command to run the Flask application using gunicorn
-CMD ["python", "flask_app.py"]
+CMD ["python", "app.py"]
