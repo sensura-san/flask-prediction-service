@@ -36,7 +36,7 @@ sorted_labels = sorted(label_mapping.keys())
 # Convert to strings to ensure they're hashable
 display_labels = [str(label_mapping[key]) for key in sorted_labels]
 
-ARTIFACTS_FILE = r"C:\Users\gohzh\OneDrive\Documents\School Stuff\04 AAP AI Applications Project\flask-prediction-service\all_deployment_artifacts.joblib"
+ARTIFACTS_FILE = r"all_deployment_artifacts.joblib"
 
 try:
     artifacts = joblib.load(ARTIFACTS_FILE)
